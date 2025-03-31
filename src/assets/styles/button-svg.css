@@ -1,0 +1,15 @@
+.button-svg {
+  border: none;
+  background: none;
+  margin: 0;
+  padding: 0;
+}
+
+.button-svg:hover {
+  cursor: pointer;
+}
+
+.button-svg img {
+  width: 24px;
+  height: 24px;
+}
