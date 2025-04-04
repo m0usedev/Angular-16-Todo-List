@@ -2,17 +2,22 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { ToDoElementComponent } from './components/to-do-element/to-do-element.component';
 import { ViewAllComponent } from './components/view-all/view-all.component';
-import { ViewAllModule } from './components/view-all/view-all.module';
+import { AddTaskComponent } from './components/add-task/add-task.component';
+import { ToDoElementComponent } from './components/to-do-element/to-do-element.component';
+import { TodoAppComponent } from './components/todo-app/todo-app.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ViewAllComponent,
+    TodoAppComponent,
+    AddTaskComponent,
+    ToDoElementComponent,
+    TodoAppComponent
   ],
   imports: [
     BrowserModule,
-    ViewAllModule
   ],
   providers: [],
   bootstrap: [AppComponent]
