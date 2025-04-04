@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable(/*{
+  providedIn: 'root' // esto es para que este para todos los componenetes
+}*/)
 export class TodoListService {
   private tasks : string[] = [];
   private taksSubject: BehaviorSubject<string[]> = new BehaviorSubject<string[]>(this.tasks);
