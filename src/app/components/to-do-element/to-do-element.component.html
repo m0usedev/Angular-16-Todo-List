@@ -1,7 +1,9 @@
 <div class="app-to-do-element">
   <input type="checkbox">
-  <span>call Mani</span>
-  <button type="button" class="button-svg">
+  <span>
+    <ng-content />
+  </span>
+  <button type="button" class="button-svg" (click)="delTask()">
     <img src="assets/icons/paper-bin.svg" alt="Paper Bin">
   </button>
 </div>
