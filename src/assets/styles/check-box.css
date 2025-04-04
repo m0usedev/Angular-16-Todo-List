@@ -1,0 +1,33 @@
+/* Ocultar el checkbox predeterminado */
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 20px;
+  height: 18px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Cambiar color cuando está seleccionado */
+input[type="checkbox"]:checked {
+  background-color: green;
+  border-color: green;
+}
+
+/* Agregar el icono de check cuando está seleccionado */
+input[type="checkbox"]:checked::after {
+  content: '\2713';
+  /* Símbolo de check */
+  font-size: 15px;
+  color: white;
+  font-weight: bold;
+  position: absolute;
+}
