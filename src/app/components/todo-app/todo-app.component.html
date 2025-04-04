@@ -1,0 +1,9 @@
+<div class="TodoApp-C">
+  <h1>To Do List</h1>
+  <div class="todo-section">
+    <app-add-task></app-add-task>
+    <app-to-do-element *ngFor="let task of tasks, let i = index" [taskIndex]="i">
+      {{task}}
+    </app-to-do-element>
+  </div>
+</div>
